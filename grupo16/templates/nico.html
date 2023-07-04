@@ -1,0 +1,324 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full Stack developer, here you will find information about the projects I have done."
+    />
+    <meta
+      property="og:description"
+      content="Full Stack developer, here you will find information about the projects I have done. "
+    />
+    <meta property="og:title" content="Nicolas Shinji | Full Stack" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Nicolas Shinji | Full stack"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" href="{% static 'nic/img/logo.png' %}" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="{% static 'nic/img/logo-120x120.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static 'nic/img/logo-32x32.png' %}"
+    />
+    <link
+      rel="icon"
+      href="{% static 'nic/img/logo-16x16.png' %}"
+      sizes="16x16"
+      type="image/png"
+     
+    
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'nic/img/favicon.ico'% } " />
+    <link rel="stylesheet" href="{% static 'nic/css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'nic/css/media.css' %}" media="(max-width: 991px)" />
+    <script
+      src="https://kit.fontawesome.com/d22b2dad17.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Nicolas Shinji / Full stack
+
+    </title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__logo">
+          <p class="navbar__title">
+            <a href="#">NS</a>
+          </p>
+        </div>
+        <div class="navbar__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link active" data-ref="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navbar__link" data-ref="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="navbar__link" data-ref="portfolio">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navbar__link" data-ref="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="home__background"></div>
+      <picture>
+        <source type="image/webp" href="{% static 'nic/img/foto-portfolio.jpg'% }" />
+        <img class="home__profile" alt="picture profile" />
+      </picture>
+      <div class="home__description">
+        <h1 class="home__title">Nicolas Shinji</h1>
+        <span class="home__title--secondary">Full stack</span>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="section__title">About me</h2>
+        <div class="about__grid">
+          <div class="about__description">
+            <h2>Full stack / Data Analyst / Industrial Organization Bachelor / Change Management Sr.</h2>
+            <p>
+              I define my self as a Solution-Oriented professional.
+            </p>
+
+            <p>
+                Self-employment is in my family's DNA. I have been planning and developing projects since I remember.
+                I am passionate about creating processes and getting ideas materialized both in real and virtual worlds.
+                I am also involved in key processes software migrations and develop Data Analytics Solutions , ETL and Dashboards using Python, SQL and Power-BI for my team.
+            </p>
+            <a
+              class="button--cta"
+              href="{% static 'nic/img/CV shinji nicolas EN.pdf'% }"
+              download="Nicolas Shinji CV"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-file-download"></i>Download CV
+            </a>
+          </div>
+          <div class="about__skills">
+            <div class="skill__title">
+              <h2>Skills & Technologies</h2>
+            </div>
+            <div class="skill__item">
+              <i class="fa-brands fa-html5"></i>
+              <div class="skill__name">HTML5</div>
+            </div>
+            <div class="skill__item">
+              <i class="fa-brands fa-css3-alt"></i>
+              <div class="skill__name">CSS</div>
+            </div>
+            <div class="skill__item">
+              <i class="fa-brands fa-js"></i>
+              <div class="skill__name">JAVASCRIPT</div>
+            </div>
+            <div class="skill__item">
+              <i class="fa-brands fa-git-alt"></i>
+              <div class="skill__name">GIT</div>
+            </div>
+            <div class="skill__item">
+                <i class="fa-brands fa-python"></i>
+                <div class="skill__name">PYTHON</div>
+            </div>
+            <div class="skill__item">
+                <img src="{% static 'nic/img/SAP.svg'%}" alt="SAP icon"/>
+                <div class="skill__name">SAP</div>
+            </div>
+            <div class="skill__item">
+                <img src="{% static 'nic/img/powerbi.svg' % }" alt="PBI icon"/>
+                <div class="skill__name">POWERBI</div>
+            </div>
+            <div class="skill__item">
+                <img src="{% static 'nic/img/vs.svg' % }" alt="VS icon"/>
+                <div class="skill__name">VISUAL STUDIO CODE</div>
+            </div>
+            <div class="skill__item">
+                <img src="{% static 'nic/img/logo-mysql.svg' % } " alt="mysql icon"/>
+                <div class="skill__name">MYSQL</div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Portfolio</h2>
+        <h3 class="section__subtitle">Here you will see the projects I have worked on. for the moment, here are some examples from whom i am learning about.</h3>
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="{% static 'nic/img/anderson.png' %}" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Anderson-Ocana</h3>
+              <p class="portfolio__description--text">
+                Youtube.
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://www.youtube.com/@andersonocana2392"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="{% static 'nic/img/dalto.png' %}" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Soy dalto</h3>
+              <p class="portfolio__description--text">
+                youtube
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://www.youtube.com/@soydalto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="{% static 'nic/img/drol.png' %}" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Damian Rol</h3>
+              <p class="portfolio__description--text">
+                youtube
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://www.youtube.com/@damianrol4663"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <i class="fas fa-globe-americas"></i> Website
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <source type="image/jpeg" srcset="{% static 'nic/img/cac.png' %}" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Codo a Codo</h3>
+              <p class="portfolio__description--text">
+                Sitio Web
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://aulasvirtuales.bue.edu.ar/my/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+               
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <h3 class="section__subtitle">
+          Contact me if you want us to work together.
+        </h3>
+        <div class="contact__grid">
+          <a
+            href="mailto:shinji.nicolas@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+
+              <i class="far fa-envelope"></i>
+              <p>Mail Me</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/nshinji"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-github"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a
+            href="https://twitter.com/ShinjiNicolas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-twitter"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nicolás-shinji"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-linkedin-in"></i>
+              <p>Contact Me</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copyright © 2023. <a href="#">@nshinji</a> <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script async src="{% static 'nic/js/index.js' % }"></script>
+  </body>
+</html>

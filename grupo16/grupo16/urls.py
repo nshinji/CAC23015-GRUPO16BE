@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from grupo16.views import saludo
+from grupo16.views import saludo, op_site, nic_site
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',saludo)
+    path('',op_site),
+    path('nic_site/', nic_site, name='nic_site')
 ]
